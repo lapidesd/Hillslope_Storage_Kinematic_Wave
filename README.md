@@ -11,7 +11,7 @@ The code is broken down into 4 different blocks. The first block includes module
 
 To run the code, run each block sequentially. If you make changes to user preferences, you need to rerun only the block where you made changes and any subsequent blocks. Prior blocks should be unaffected.
 
-The folder ParFlow_hydrographs includes hydrograph data for all of the ParFlow simulations referred to in (4). The reported data are for an exponential width hillslope. The columns are as follows: (0) Timestep number with timesteps in increments of 0.1 minutes, (1) total flow out the bottom boundary during that timestep, (2) standard deviation of flow values at eat cell along the bottom boundary, (3) mean flow value along the bottom boundary.
+The folder ParFlow_hydrographs includes hydrograph data for all of the ParFlow simulations referred to in (4). The reported data are for an exponential width hillslope. The columns are as follows: (0) Timestep number with timesteps in increments of 1 minute, (1) total flow out the bottom boundary during that timestep (mm3/hr), (2) standard deviation of flow values at eat cell along the bottom boundary (mm3/hr), (3) mean flow value along the bottom boundary (mm3/hr).
 
 
 References
