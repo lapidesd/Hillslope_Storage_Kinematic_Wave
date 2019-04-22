@@ -7,13 +7,15 @@ The jupyter notebook titled: Hillslope_storage_KW_numerical includes the solutio
 
 A table of variables used in the code is included in this repository as well.
 
+The folder ParFlow_hydrographs includes hydrograph data for all of the ParFlow simulations referred to in (4). The reported data are for an exponential width hillslope. The columns are as follows: (0) Timestep number with timesteps in increments of 1 minute, (1) total flow out the bottom boundary during that timestep (m3/s), (2) standard deviation of flow values at eat cell along the bottom boundary (m3/s), (3) mean flow value along the bottom boundary (m3/s). The included jupyter notebook titled: Hydrograph_visualize graphs each hydrograph. The program is split into two blocks, the first containing module dependencies and the second which runs the program when the user-defined filepath is entered where commented.
+
 For beginners to Python and jupyter notebook:
 
 In each of the two jupyter notebook simulations, the code is broken down into 4 different blocks. The first block includes module dependencies, which you must install before running the notebook in addition to jupyter notebook. The second block contains the equations described by Lapides et al. n.d.. The third block solves for characteristic nets and hydrograph data and plots the characteristic nets. This block includes a number of different options that users can change, commented in the code. The final block plots a hydrograph of q or Q depending on user preference. User-defined parameters are marked at the top of the block. 
 
 To run the code, run each block sequentially. If you make changes to user preferences, you need to rerun only the block where you made changes and any subsequent blocks. Prior blocks should be unaffected.
 
-The folder ParFlow_hydrographs includes hydrograph data for all of the ParFlow simulations referred to in (4). The reported data are for an exponential width hillslope. The columns are as follows: (0) Timestep number with timesteps in increments of 1 minute, (1) total flow out the bottom boundary during that timestep (mm3/hr), (2) standard deviation of flow values at eat cell along the bottom boundary (mm3/hr), (3) mean flow value along the bottom boundary (mm3/hr).
+
 
 
 References
