@@ -13,6 +13,7 @@ This repository includes programs to run the solution to the Hillslope Storage K
   * ParFlow_Visualization.ipynb
   * Boundary_flow_data
   * Flow_depth
+  * Hydrograph_data
 
 Hillslope_Storage_Analytic_symbols_table.pdf includes a table of symbols used in the code and README files for this project.
 
@@ -22,7 +23,7 @@ The jupyter notebook titled: Hillslope_storage_KW_numerical includes the solutio
 
 The directory Experiment_data includes an excel file with the raw data (raw_data.xlsx), a program that explores different data smoothing methods (Hillslope_Smoothing.ipynb), a csv of smooth data (smooth_hydrograph_data.csv), and a program that compares analytical hydrographs to experimental results (Experimental_Analysis.ipynb), as described in (4).
 
-The directory ParFlow includes data for all of the ParFlow simulations referred to in (4) (including flow data at the boundary in the Boundary_flow_data directory and flow depth at the boundary in the Flow_depth directory) and a program to visualize the data. The reported data are for an exponential width hillslope. The columns in the data text files are as follows: (0) Timestep number with timesteps in increments of 1 minute, (1) total flow out the bottom boundary during that timestep (m3/s), (2) standard deviation of flow values at eat cell along the bottom boundary (m3/s), (3) mean flow value along the bottom boundary (m3/s). The included jupyter notebook titled: ParFlow_Visualization.ipynb.
+The directory ParFlow includes data for all of the ParFlow simulations referred to in (4) (including flow hydrographs in Hydrograph_data, flow data across the boundary in the Boundary_flow_data directory, and flow depth across the boundary in the Flow_depth directory) and a program to visualize the data. The reported data are for an exponential width hillslope. The columns in the data text files are as follows: (0) Timestep number with timesteps in increments of 1 minute, (1) total flow out the bottom boundary during that timestep (m3/s), (2) standard deviation of flow values at eat cell along the bottom boundary (m3/s), (3) mean flow value along the bottom boundary (m3/s). The included jupyter notebook titled: ParFlow_Visualization.ipynb.
 
 For beginners to Python and jupyter notebook:
 
