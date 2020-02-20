@@ -3,6 +3,6 @@ Hydrograph data in this folder contain overlandsum output from ParFlow simulatio
 
 Data are reported by "index," which is the timestep in ParFlow. The time increment used is 0.5 seconds, and the hydrographs reported in the column "sum" are total flow along the bottom boundary. The columns "SD" and "mean" contain the standard deviation and mean flow across the boundary, respectively.
 
-Hydrographs can be visualized using the jupyter notebook XXXX.ipynb in the parent directory.
+Hydrographs can be visualized using the jupyter notebook ParFlow_Visualization.ipynb in the parent directory.
 
 Lapides, etc. CITATION GOES HERE.
