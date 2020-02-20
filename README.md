@@ -1,13 +1,28 @@
-# Hillslope Storage Kinematic Wave
-This repository includes programs to run the solution to the Hillslope Storage Kinematic Wave Equation for Overland Flow and results from ParFlow (1,2,3,5) simulations described by (4). 
+# Convergence and divergence on idealized hillslopes: supplementary data and code
+This repository includes programs to run the solution to the Hillslope Storage Kinematic Wave Equation for Overland Flow, results from ParFlow (1,2,3,5) simulations described by (4) with a program to visualize the data, and results from laboratory experiments described by (4) with a program demonstrating data smoothing methods and another program showing the hydrograph parameterization for comparison between analytical and laboratory methods. A file tree of included content is below:
+
+* Hillslope_Storage_Analytic_symbols_table.pdf
+* Hillslope_storage_KW_analytic.ipynb
+* Hillslope_storage_KW_numerical.ipynb
+* Experiment_data
+  * raw_data.xlsx
+  * Hillslope_Smoothing.ipynb
+  * smooth_hydrograph_data.csv
+  * Experimental_analysis.ipynb
+* ParFlow
+  * ParFlow_Visualization.ipynb
+  * Boundary_flow_data
+  * Flow_depth
+
+Hillslope_Storage_Analytic_symbols_table.pdf includes a table of symbols used in the code and README files for this project.
 
 The jupyter notebook titled: Hillslope_storage_KW_analytic includes the solution to the hillslope-storage kinematic wave equation for overland flow for a width function described by an exponential of the form w=ce^(ax), where w is the contour width, i.e. distance between limiting streamlines, x is the distance downhill from the divide, a is a constant describing hillslope convergence/divergence, and c is a constant describing the size of the hillslope in the cross-slope direction. The jupyter notebook runs this solution for user-defined values of a, c, rainfall rate r, storm length tr, infiltration rate f, roughness parameter alpha, and hillslope length (xend-xtop, where xend is the outlet location and xtop is the divide location). This solution is valid for m=2 only. The notebook produces characteristic nets for the storms as well as hydrographs of q or Q, depending on user preference. The program also prints the value of tc and qmax for each run.
 
 The jupyter notebook titled: Hillslope_storage_KW_numerical includes the solution to the hillslope-storage kinematic wave equation for overland flow for a width function described by an exponential of the form w=ce^(ax), where w is the contour width, i.e. distance between limiting streamlines, x is the distance downhill from the divide, a is a constant describing hillslope convergence/divergence, and c is a constant describing the size of the hillslope in the cross-slope direction. The jupyter notebook runs this solution for user-defined values of a, c, rainfall rate r, storm length tr roughness parameter alpha, and hillslope length (xend-xtop, where xend is the outlet location and xtop is the divide location). This solution is valid for any user-defined value of m but only for zero infiltration f=0. The notebook produces characteristic nets for the storms as well as hydrographs of q or Q, depending on user preference. The program also prints the value of tc and qmax for each run.
 
-A table of variables used in the code is included in this repository as well.
+The directory Experiment_data includes an excel file with the raw data (raw_data.xlsx), a program that explores different data smoothing methods (Hillslope_Smoothing.ipynb), a csv of smooth data (smooth_hydrograph_data.csv), and a program that compares analytical hydrographs to experimental results (Experimental_Analysis.ipynb), as described in (4).
 
-The folder ParFlow_hydrographs includes hydrograph data for all of the ParFlow simulations referred to in (4). The reported data are for an exponential width hillslope. The columns are as follows: (0) Timestep number with timesteps in increments of 1 minute, (1) total flow out the bottom boundary during that timestep (m3/s), (2) standard deviation of flow values at eat cell along the bottom boundary (m3/s), (3) mean flow value along the bottom boundary (m3/s). The included jupyter notebook titled: Hydrograph_visualize graphs each hydrograph. The program is split into two blocks, the first containing module dependencies and the second which runs the program when the user-defined filepath is entered where commented.
+The directory ParFlow includes data for all of the ParFlow simulations referred to in (4) (including flow data at the boundary in the Boundary_flow_data directory and flow depth at the boundary in the Flow_depth directory) and a program to visualize the data. The reported data are for an exponential width hillslope. The columns in the data text files are as follows: (0) Timestep number with timesteps in increments of 1 minute, (1) total flow out the bottom boundary during that timestep (m3/s), (2) standard deviation of flow values at eat cell along the bottom boundary (m3/s), (3) mean flow value along the bottom boundary (m3/s). The included jupyter notebook titled: ParFlow_Visualization.ipynb.
 
 For beginners to Python and jupyter notebook:
 
