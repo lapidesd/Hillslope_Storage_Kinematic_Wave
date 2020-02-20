@@ -3,6 +3,6 @@ Flow depth data in this folder contain flow depths from ParFlow simulations on c
 
 Data are reported by "index," which is the location along the bottom boundary in relation to the center of the hillslope. The column "value" reports the depth at each cell along the hillslope boundary during the equilibrium peak flow portion of the hydrograph.
 
-Flow depth data can be visualized using the jupyter notebook XXXX.ipynb in the parent directory.
+Flow depth data can be visualized using the jupyter notebook ParFlow_Visualization.ipynb in the parent directory.
 
 Lapides, etc. CITATION GOES HERE.
