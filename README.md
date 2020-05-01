@@ -1,7 +1,15 @@
-# Convergence and divergence on idealized hillslopes: supplementary data and code
+# Analytical solution to runoff on hillslopes with curvature: numerical and laboratory verification: supplementary data and code
+
+Dana Lapides [1], Cy David [1], Anneliese Sytsma [2], David Dralle [3], and Sally Thompson [4,5]
+
+[1] Department of Earth and Planetary Science, University of California, Berkeley
+[2] Department of Environmental Design, University of California, Berkeley
+[3] Department of Geology, Sacramento State University
+[4] Department of Civil and Environmental Engineering, University of California, Berkeley
+[5] Department of Environmental Engineering, University of Western Australia
 
 [![DOI](https://zenodo.org/badge/180637473.svg)](https://zenodo.org/badge/latestdoi/180637473)
-reStructedText
+
 
 This repository includes programs to run the solution to the Hillslope Storage Kinematic Wave Equation for Overland Flow, results from ParFlow (1,2,3,5) simulations described by (4) with a program to visualize the data, and results from laboratory experiments described by (4) with a program demonstrating data smoothing methods and another program showing the hydrograph parameterization for comparison between analytical and laboratory methods. A file tree of included content is below:
 
